@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="book.css"> 
+    <script src="script.js" defer></script> 
+<body>
+
+    <!-- Header -->
+
+    <div id="header">
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+        
+
+        <div class="heading">
+            <h1>Library Management</h1>
+        </div>
+    </div>
+
+    <!-- Side Navigation -->
+
+    <div class="side-nav">
+        <div class="profile">
+            <img src="img/admin.jpg">
+            <p>Admin</p>
+        </div>
+
+        <a href="#">
+            <div class="side-nav-elements">
+                <i class="bi bi-columns-gap" style="margin-right: 5%;"></i>
+                <p>Dashboard</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="side-nav-elements" id="user">
+                <i class="bi bi-person" style="margin-right: 5%;"></i>
+                <p>Users</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="side-nav-elements">
+                <i class="bi bi-book-half" style="margin-right: 5%;"></i>
+                <p>Books</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="side-nav-elements">
+                <i class="bi bi-paypal" style="margin-right: 5%;"></i>
+                <p>Transactions</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div id="logout">
+                <i class="bi bi-door-open"></i>
+                <p>Logout</p>
+            </div>
+        </a>
+
+
+    </div>
+
+    <!-- Main Content -->
+    
+    <div id="main-content">
+
+        <div id="main-heading">
+            <h1>Users Management</h1>
+        </div>
+
+
+        <div class="table">
+            
+            <div class="table-container">
+                <div class="table-header">
+                    <h1> Add Users </h1>
+                </div>
+                <div class="table-container">
+                    <div class="container">
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Enter Name" name="name" id="name" required>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                      
+                          <label for="name"><b>Address</b></label>
+                        <input type="text" placeholder="Enter Address" name="name" id="name" required>
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown</button>
+                            <div class="dropdown-content">
+                              <a href="#">Borrower</a>
+                              <a href="#">Admin</a>
+                              <a href="#">Librarian</a>
+                            </div>
+                          </div>
+                          <hr>
+                          <button type="submit" class="registerbtn">Add</button>
+                        </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- SECOND TABLE -->
+
+        <div class="table">
+            
+            <div class="table-container">
+                <div class="table-header">
+                    <h1> User Records </h1>
+                </div>
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a name">
+
+                <table id="myTable">
+                  <tr class="header">
+                    <th style="width:10%;">ID</th>
+                    <th style="width:20%;">Name</th>
+                    <th style="width:10%;">Password</th>
+                    <th style="width:30%;">Email</th>
+                    <th style="width:60%;">Address</th>
+                    <th style="width:70%;">UserType</th>
+                    <th style="width:60%;">Status</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Matt</td>
+                    <td>1234h</td>
+                    <td>mattdorego@gmail.com</td>
+                    <td>Tolosa,Leyte</td>
+                    <td>Admin</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Radelyn</td>
+                    <td>1h34h</td>
+                    <td>pitapitao@gmail.com</td>
+                    <td>Palo,Leyte</td>
+                    <td>Admin</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Gillian</td>
+                    <td>1w34h</td>
+                    <td>doblegillian@gmail.com</td>
+                    <td>Caibiran,Biliran</td>
+                    <td>Librarian</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Kimberly</td>
+                    <td>123gh</td>
+                    <td>kimmyo@gmail.com</td>
+                    <td>TanauanLeyte</td>
+                    <td>Borrower</td>
+                    <td>Deactived</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Renz</td>
+                    <td>1o34h</td>
+                    <td>laurenter@gmail.com</td>
+                    <td>Lapaz,Leyte</td>
+                    <td>Admin</td>
+                    <td>Deactivited</td>
+                  </tr>
+                
+                </table>
+                <button type="button" class="btn">Edit</button>
+                <button type="button" class="btn-danger" style="background-color: red;">Delete</button>
+                <button type="button" class="btn-primary" style="background-color: skyblue;">Deactived</button>
+            </div>
+
+        </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

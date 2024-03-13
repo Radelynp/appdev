@@ -1,0 +1,449 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#header{
+    width:100%;
+    height:80px;
+    background-color: #022648;
+    float:left;
+
+    display: flex;
+    align-items: center; /* Centers vertically */
+    
+}
+
+#header .logo{
+    width: 8%;
+    height:auto;
+
+    float:left;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header .logo img{
+    width:80px;
+    height:80px;
+    float:left;
+}
+
+#header .heading{
+    width: 92%;
+    height: auto;
+
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header .heading h1{
+    color:white;
+    font-size: 28px;
+}
+
+
+/* Side Nav */
+
+.side-nav{
+    width: 15%;
+    height:600px;
+    background-color: white;
+    float: left;
+    box-shadow:#B4B4B8;
+}
+
+
+.side-nav .profile{
+    width:100%;
+    height:120px;
+    background-color: white;
+    box-sizing: border-box;
+    border-bottom: 2px solid #B4B4B8;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.side-nav .profile img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    float:left;
+    margin-right:10px;
+}
+
+.side-nav .profile p{
+    font-size:16px;
+    font-weight: bold;
+    float:left;
+}
+
+.side-nav .side-nav-elements{
+    width:100%;
+    height: 50px;
+    background-color: white;
+    border-bottom: 2px solid #B4B4B8;
+    box-sizing:border-box;
+
+    display: flex;
+    align-items: center; /* Centers vertically */
+
+    padding-left:40px;
+}
+
+.side-nav .side-nav-elements img{
+    width:30px;
+    height:30px;
+    float:left;
+    margin-right:10px;
+}
+
+.side-nav .side-nav-elements p{
+    font-size:16px;
+    font-weight: bold;
+    float:left;
+}
+
+.side-nav-elements:hover{
+    box-sizing: border-box;
+    border-right:5px solid #022648;
+}
+
+#user{
+    border-right:5px solid #022648;
+}
+
+.side-nav #logout{
+    width:100%;
+    height: 50px;
+    background-color: #022648;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+
+    margin-top:280px;
+}
+
+
+.side-nav #logout p{
+    font-size:16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/* Main Content */
+
+#main-content{
+    width:85%;
+    height:600px;
+    background-color: yellowgreen;
+    float:left; 
+}
+
+#main-content #main-heading{
+    width:100%;
+    height:50px;
+    background-color: white;
+    float:left;
+
+    display: flex;
+    align-items: center; /* Centers vertically */
+}
+
+#main-content #main-heading h1{
+    font-size:24px;
+    color:#022648;
+    margin-left: 30px;
+}
+
+#main-content .table{
+    width:50%;
+    height:550px;
+    background-color: white;
+    float:left;
+
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: center;
+}
+
+#main-content .table .table-container{
+    width:90%;
+    height:500px;
+    background-color: white;
+    float:left;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#main-content .table .table-container .table-header{
+    width:100%;
+    height:50px;
+    background-color: #022648;
+    float:left;
+
+    display: flex;
+    align-items: center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#main-content .table .table-container .table-header h1{
+    color:white;
+    padding-left:10px;
+    font-size: 18px;
+}
+
+/***********************************/
+
+#main-content .table .table-container .table-search{
+    width:100%;
+    height:50px;
+    background-color: #B4B4B8;
+    float:left;
+
+    display: flex;
+    align-items: center;
+}
+
+#main-content .table .table-container .table-search .table-search-text{
+    width:40%;
+    height:25px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+
+    float:left;
+
+    display: flex;
+    align-items: center;
+}
+
+#main-content .table .table-container .table-search .table-search-text p{
+    color:grey;
+    margin-left:10px;
+}
+
+
+/**********************************/
+
+#main-content .table .table-container .table-content{
+    width:100%;
+    height:350px;
+    background-color: #EEEDEB;
+    float:left;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: center;
+    text-align: left;
+}
+
+#main-content .table .table-container .table-content table {
+    width: 90%;
+    border-collapse: collapse;
+    
+}
+
+#main-content .table .table-container .table-content th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    color:white;
+    background-color: #022648;
+}
+
+#main-content .table .table-container .table-content td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+}
+
+
+/*******************************************************/
+
+#main-content .table .table-container .table-button{
+    width:100%;
+    height:50px;
+    background-color: #B4B4B8;
+    float:left;
+
+    display:flex;
+    align-items: center;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#main-content .table .table-container .table-button button{
+    border-radius: 10px;
+    background-color: #022648;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left:30px;
+}
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color:#EEEDEB;
+    width: 105%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #022648;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+    font-size: x-small;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #B4B4B8;
+  }
+  .dropbtn {
+    background-color: #022648;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border-radius: 15%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float:  right;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #f1f1f1;color:#022648; }
+
+  .btn{
+    margin-top: 10%;
+    background-color: #022648;
+    color: #ddd;
+    width: 10%;
+    border-radius: 15%;
+  }
+  .btn-danger {
+    margin-top: 10%;
+    background-color: #d42a2a;
+    color: #ddd;
+    width: 10%;
+    border-radius: 15%;
+  }
+  .btn-primary{
+    margin-top: 10%;
+    background-color: #4a99e3;
+    color: #000000;
+    width: 15%;
+    border-radius: 15%;
+  }
